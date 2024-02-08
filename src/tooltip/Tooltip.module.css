@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+.tooltipContainer{
+position:relative;
+padding:20px;
+
+}
+
+
+
+.child{
+    font-size: 20px;
+    text-align: left;
+    width:min-content;
+    white-space: nowrap;
+}
+
+
+.tooltip{
+ 
+    background-color: rgb(15, 14, 14);
+    box-shadow: 0px 0px 80px 20px lightslategray;
+    padding: 10px;
+    width:150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position:absolute;
+    left:150px;
+    top:20px;
+  
+   
+}
+
+
+@keyframes animOn {
+    0%   { opacity:0 ; transform: scale(0.5) translateX(-100px);}
+   
+    100% { opacity: 1 ; transform: scale(1) translateX(0px);}
+  }
+
+  
+@keyframes animOff {
+    0%   { opacity:1 ; transform: scale(1) translateX(0px);}
+ 
+    100% { opacity: 0 ; transform: scale(0.5) translateX(-100px);}
+  }
+
+
+.toolAnimOn{
+
+    animation: animOn 2s ease-in-out;
+}
+
+.toolAnimOff{
+
+    animation: animOff 1s ease-in-out;
+}
+
+
+.tooltipMsg{
+
+    font-size: 1em;
+    color: white;
+}
+
+.pointer{
+
+    color:  rgb(15, 14, 14);
+    font-size: 35px;
+    margin-left: -20px;
+    margin-top: 16px;
+    
+   
+}
