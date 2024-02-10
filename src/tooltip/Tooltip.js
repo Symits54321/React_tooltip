@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import style from  './Tooltip.module.css'
+import style from  './Tooltip.module.css';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons';
@@ -9,9 +10,17 @@ import { faCaretLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Tooltip({message,children}){
+
+
+
+
+
+function Tooltip({message,children,color,bgcolor,left,top}){
 
     const [hoverState, setHoverState] = useState(false);
+
+  
+
     const [toolStyle, setToolStyle] = useState( `${style.tooltip}` );
 
     // { Mouse hover funct } 
@@ -23,7 +32,7 @@ function Tooltip({message,children}){
         const handleMouseLeave = () => {
             const timeout = setTimeout(() => {
                  setHoverState(false);
-            }, 900);
+            }, 480);
            
             setToolStyle(`${style.tooltip}  ${style.toolAnimOff}`);
             return () => clearTimeout(timeout);
@@ -48,16 +57,35 @@ function Tooltip({message,children}){
         </p> 
 
 
-        {/* // TOOLTIP  */}
+          {/* // TOOLTIP  */}
         {hoverState &&
-           
-           ( <div className={toolStyle}>
-              <FontAwesomeIcon className={style.pointer} icon={faCaretLeft} />
-               <p className={style.tooltipMsg}> {message} </p>              
-            </div>   
-        
-           )
+
+          
+
+                ( <div className={toolStyle} 
+
+                        style={{backgroundColor:bgcolor,left:`${parseInt(left)+130}px`,top:`${parseInt(top)+20}px`}}
+                >
+                  
+                    <FontAwesomeIcon 
+                    className={style.pointer} 
+                    icon={faCaretLeft} 
+                    style={{color:bgcolor,backgroundColor:'transparent'}}
+                    />
+                    
+                
+                    <p 
+                    className={style.tooltipMsg}
+                    style={{color:color}}
+                    > {message} </p> 
+                                  
+                  </div>   
+              
+                )
          }
+
+
+
       
       </div>
        
