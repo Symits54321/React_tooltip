@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Tooltip Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Tooltip component provides a simple and customizable way to add tooltips to elements in your React application. Tooltips are small, informative messages that appear when users hover over an element, providing additional context or guidance.
 
-## Available Scripts
+![Tooltip Example 1](path/to/tooltip-example-1.png)
+![Tooltip Example 2](path/to/tooltip-example-2.png)
 
-In the project directory, you can run:
+### `Hoisted Link`
 
-### `npm start`
+https://react-tooltip-five.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Watch the tutorial on YouTube](https://www.youtube.com/watch?v=H0d2ZD4e164&feature=youtu.be)
 
-### `npm test`
+### Features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Customizable Content**: The Tooltip component allows you to specify the content of the tooltip using the `message` prop. You can customize the message to provide relevant information to users.
 
-### `npm run build`
+- **Styling Options**: Customize the appearance of the tooltip using the `color` and `bgcolor` props to set the text color and background color, respectively.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Positioning**: Control the position of the tooltip relative to the element using the `left` and `top` props. This allows you to place the tooltip precisely where it's needed on the screen.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Props:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `message`: The text content of the tooltip.
+- `color`: The color of the text in the tooltip.
+- `bgcolor`: The background color of the tooltip.
+- `left`: The horizontal position of the tooltip relative to the element.
+- `top`: The vertical position of the tooltip relative to the element.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
