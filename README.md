@@ -2,8 +2,8 @@
 
 The Tooltip component provides a simple and customizable way to add tooltips to elements in your React application. Tooltips are small, informative messages that appear when users hover over an element, providing additional context or guidance.
 
-![Tooltip Example 1](path/to/tooltip-example-1.png)
-![Tooltip Example 2](path/to/tooltip-example-2.png)
+![Tooltip Example 1](./screeshots/tooltip_home.JPG)
+![Tooltip Example 2](./screeshots/tooltip%20props.JPG)
 
 ### `Hoisted Link`
 
